@@ -1,0 +1,234 @@
+/*=================
+    MASTER PAGE 
+===================*/
+/* Import Kantumruy font */
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy&display=swap");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "Kantumruy";
+}
+
+p {
+    font-size: 15px;
+}
+
+/* ------------- master page ------------- */
+/* main content block */
+.container {
+    height: auto;
+    padding: 40px 30px;
+}
+
+/* slider block */
+.slider-wrapper {
+    overflow: hidden;
+}
+.slider-img-wrapper {
+    display: flex !important;
+    justify-content: center;
+}
+
+/* ------------- header page ------------- */
+/* menue block */
+.masterpage-header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.navbar-toggler {
+    margin-right: 30px;
+}
+.nav-item {
+    margin: 0;
+    padding: 0;
+    color: black;
+    border-bottom: 2px solid #86adcb;
+}
+.nav-item a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.active {
+    border-radius: 10px;
+}
+.active::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #263c90;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+.collapsing {
+    transition: 0.6s;
+}
+
+/* ------------- footer page ------------- */
+.masterpage-footer {
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    background-color: #0e182c;
+}
+
+.buttom-left-line {
+    border-right: 2px solid #ffff;
+}
+
+.footer-left-line {
+    padding-right: 30px;
+    border-right: 2px solid #ffff;
+}
+
+/*================
+    Media Query 
+==================*/
+/* mobile */
+@media only screen and (min-width: 320px) {
+    /* header block */
+    .navbar-brand {
+        padding: 0;
+        margin-left: 10%;
+        background-color: #ffffff;
+    }
+
+    /* footer */
+    .footer-info img {
+        margin-top: 5px;
+        width: 25px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* footer */
+
+    .footer-info {
+        margin-top: -4px !important;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+/* tablet */
+@media only screen and (max-width: 991px) {
+    /* navbar */
+    .active::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+        background-color: none;
+        margin-left: 0;
+        margin-top: 0;
+        /* display: none; */
+        border-bottom: none;
+    }
+    /* header block */
+    .navbar {
+        margin-left: 0;
+    }
+    .navbar-nav {
+        width: 100%;
+        padding: 20px 0;
+        /* margin-right: 50%; */
+        text-align: center;
+        background: rgb(241, 238, 236);
+    }
+    .nav-item a:hover {
+        padding-left: 15px;
+        transition: 0.6s;
+    }
+
+    .nav-item {
+        border-bottom: none;
+    }
+    /* form label */
+    label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* content block */
+    .heading {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .subheading {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    /* footer block */
+    .footer-left-line {
+        padding-right: 0;
+        border-right: none;
+    }
+}
+@media only screen and (min-width: 992px) {
+    /* Menue */
+    .navbar {
+        margin-right: 30px;
+    }
+
+    .nav-item:not(:first-child) {
+        padding-left: 2rem;
+    }
+     .nav-link {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1920px;
+        padding-right: 10% !important;
+        padding-left: 10% !important;
+    }
+    /* header block */
+
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    label {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .subheading {
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .navbar {
+        padding: 0;
+        margin-right: 5%;
+        background-color: #ffffff;
+    }
+    .navbar-brand {
+        padding: 0;
+        margin-left: 5%;
+        background-color: #ffffff;
+    }
+}

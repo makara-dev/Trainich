@@ -1,0 +1,128 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+.center a {
+    text-decoration: none;
+    color: #707070;
+}
+.project-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.image-wrap > img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+    margin-bottom: 5%;
+}
+.image-wrap > img:hover { box-shadow: 1px 1px 12px 4px rgba(0, 0, 0, 0.1);}
+
+.project-description,
+.address {
+    margin-top: 10px;
+}
+@media only screen and (min-width: 320px) {
+    .wrapp-content .image-wrap {
+        width: 237px;
+        height: 192px;
+    }
+    .project-description {
+        width: 237px;
+    }
+}
+@media only screen and (min-width: 375px) {
+    .wrapp-content .image-wrap {
+        width: 292px;
+        height: 192px;
+    }
+    .project-description {
+        width: 292.56px;
+    }
+}
+@media only screen and (min-width: 375px) {
+    .wrapp-content .image-wrap {
+        width: 292px;
+    }
+    .project-description {
+        width: 292.56px;
+    }
+@media only screen and (min-width: 414px) {
+    .wrapp-content .image-wrap {
+        width: 342px;
+    }
+    .project-description {
+        width: 342.56px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapp-content .image-wrap {
+        width: 301px; 
+    }
+    .project-description {
+        width: 301px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapp-content .image-wrap {
+        width: 165px; 
+    }
+    .project-description {
+        width: 165px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .wrapp-content .image-wrap {
+        width: 173px; 
+    }
+    .project-description {
+        width: 173px;
+    }
+}
+@media only screen and (min-width: 1124px) {
+    .wrapp-content .image-wrap {
+        width: 198px; 
+    }
+    .project-description {
+        width: 198px;
+    }
+}
+@media only screen and (min-width: 1224px) {
+    .wrapp-content .image-wrap {
+        width: 223px; 
+    }
+    .project-description {
+        width: 223px;
+    }
+}
+@media only screen and (min-width: 1324px) {
+    .wrapp-content .image-wrap {
+        width: 248px; 
+    }
+    .project-description {
+        width: 243px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .wrapp-content .image-wrap {
+        width: 277px; 
+    }
+    .project-description {
+        width: 277px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .wrapp-content .image-wrap {
+        width: 350px; 
+        height: 197px;
+    }
+    .project-description {
+        width: 350px;
+    }
+}

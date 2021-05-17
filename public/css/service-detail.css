@@ -1,0 +1,45 @@
+.service-back {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.service-back:hover {
+    color: black;
+    text-decoration: none;
+}
+.service-back span {
+    border-bottom: 2px solid;
+}
+.service-img-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.service-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mb {
+    margin-bottom: 50px;
+}
+.service-description-wrapper p {
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mb {
+        margin-bottom: 0px;
+    }
+    .service-description-wrapper p {
+        margin-bottom: 0 !important;
+    }
+
+    .service-back {
+        font-size: 20px;
+    }
+    .service-back span {
+        border-bottom: 2px solid;
+    }
+}

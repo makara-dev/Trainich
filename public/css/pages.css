@@ -1,0 +1,307 @@
+/* ==================
+    PAGES
+=====================*/
+
+/*---------- home page -----------*/
+
+.home-items-center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-show {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: none;
+    border: 1px solid #2580eb;
+    outline: none;
+}
+
+.life-cirle-side {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0d5b96;
+    color: #ffff;
+}
+
+/*---------- form -----------*/
+.btn-message {
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    background: #ffff;
+    border: 1px solid #1366b0;
+}
+
+/* ----------- project page ---------- */
+
+/* ----------- about page ---------- */
+.about-center {
+    display: flex;
+    justify-content: center;
+}
+
+.ph-shape {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+}
+.d-shape {
+    margin-top: 20px;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #707070;
+}
+
+.background {
+    color: #ffff;
+    width: 100%;
+    height: auto;
+    background-color: #0a5994;
+    margin-top: 60px;
+    transform: skew(0deg, 6deg);
+}
+
+.trant {
+    transform: skew(0deg, -6deg);
+    display: flex;
+    align-items: center;
+}
+
+/* info content link */
+.info-content-link-wrapper {
+    width: 100%;
+    height: 170px;
+}
+
+.info-content-link-wrapper > h5 {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* link block */
+.link-wrapper .info-card-wrapper {
+    text-align: center;
+}
+.link-wrapper .info-card-wrapper a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.link-wrapper .info-card-wrapper .content-description {
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+/* description block */
+.desktop-content-description {
+    visibility: hidden;
+}
+/* horisontal and vertical line */
+.vertical-line {
+    width: 2px;
+    visibility: hidden;
+    background-color: rgb(224, 219, 219);
+}
+.horizontal-line {
+    width: 100%;
+    height: 1.5px;
+    margin: 0.5rem 0 0.5rem 0;
+    background-color: rgb(224, 219, 219);
+}
+/* Override slick slider */
+.slick-dots li.slick-active button:before {
+    color: white !important;
+}
+.slick-dots li {
+    margin: 0 !important;
+}
+/*==================== 
+    Medai Query 
+===================*/
+
+/* mobile */
+@media only screen and (min-width: 320px) {
+    /* home */
+    .slideshow img {
+        height: 517px;
+    }
+
+    .service-wrapper {
+        padding: 30px 0;
+        /* margin: 10px 0; */
+    }
+    .service-img-wrapper a:hover {
+        cursor: pointer;
+    }
+    .service-img-wrapper .img {
+        width: 170px;
+        height: 180px;
+    }
+    .description-wrapper {
+        margin-top: 10px;
+        padding: 0 30px;
+    }
+
+    .form-description {
+        margin-top: 40px;
+    }
+    .form-message {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .input {
+        outline: none;
+        border: none;
+        width: 100%;
+        opacity: 0.9;
+        border-bottom: 1px double #609be0;
+        margin-bottom: 10px;
+    }
+
+    .form-info {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .info-wrapper {
+        width: 100%;
+        margin: 80px 0;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    /* info content link */
+    .info-content-link-wrapper > h5 {
+        font-size: 20px;
+    }
+    /* link block */
+    .link-wrapper .info-card-wrapper {
+        text-align: left;
+    }
+    /* hide items */
+    .horizontal-line,
+    .mobile-content-description {
+        display: none;
+    }
+    /* show items */
+    .desktop-content-description,
+    .vertical-line {
+        visibility: visible;
+    }
+    .info-content-link-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    /* .info-wrapper { padding: 1rem 2rem 2rem 2rem; } */
+    .link-wrapper {
+        flex: 0 1 25%;
+    }
+    .vertical-line {
+        margin-right: 3em;
+    }
+    .desktop-content-description {
+        flex: 0 1 60%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    /* form */
+    .flex-direction {
+        flex-direction: column-reverse;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+    /* home */
+    .service-wrapper {
+        padding: 0;
+    }
+    .description-wrapper {
+        padding: 0;
+    }
+
+    /* header image slider */
+    .slideshow img {
+        height: 720px;
+    }
+
+    /* form */
+    .blur-background {
+        margin-top: 40px;
+        height: auto;
+        background-image: url("../images/formBg.png");
+        background-repeat: no-repeat;
+        background-position: 6vh;
+        background-position-y: 10vw;
+        background-size: 20%;
+    }
+
+    .form-info {
+        margin-top: 23px;
+    }
+
+    /* about */
+    .d-shape {
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 1224px) {
+    .blur-background {
+        background-position: 8vh;
+        background-position-y: 10vw;
+        background-size: 15%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .blur-background {
+        /* background-position: 6vh; */
+        background-position-y: 8vw;
+        background-size: 15%;
+    }
+}
+@media only screen and (min-width: 1524px) {
+    .blur-background {
+        /* background-position: 6vh; */
+        background-position-y: 10vw;
+        background-size: 12%;
+    }
+}
+@media only screen and (min-width: 1524px) {
+    .blur-background {
+        /* background-position: 6vh; */
+        background-position-y: 8vw;
+    }
+}
+@media only screen and (min-width: 1824px) {
+    .blur-background {
+        /* background-position: 6vh; */
+        background-position-y: 6vw;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .blur-background {
+        background-position: 15vh;
+        background-position-y: 5vw;
+        background-size: 12%;
+    }
+}
